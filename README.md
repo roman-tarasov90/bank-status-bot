@@ -21,8 +21,8 @@ The bot was created to solve a real workflow problem in an accounting team: seve
 - aiogram
 - asyncio
 - Telegram Bot API
-- JSON for state persistence
-- PyInstaller for Windows deployment
+- JSON
+- PyInstaller
 
 ## How It Works
 
@@ -38,21 +38,28 @@ Create a `config.py` file:
 
 ```python
 TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
+```
 
-The config.py file is excluded from Git and should never be committed.
+The `config.py` file is excluded from Git and should never be committed.
 
-Run
+## Run
 
 Install dependencies:
 
+```bash
 pip install aiogram
+```
 
 Run the bot:
 
+```bash
 python main.py
-Deployment
+```
+
+## Deployment
 
 The bot can be packaged as a standalone Windows executable using PyInstaller:
 
+```bash
 pyinstaller --onefile main.py
 ```
