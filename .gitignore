@@ -1,0 +1,8 @@
+.venv/
+config.py
+state.json
+build/
+dist/
+*.spec
+.vscode/
+__pycache__/
